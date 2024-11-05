@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Delights Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #f26e5a;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-section {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select, textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 5px 0 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        label {
+            font-weight: bold;
+        }
+        .radio-group {
+            margin-bottom: 15px;
+        }
+        .submit-btn {
+            background-color: #f26e5a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e65b45;
+        }
+        .checkbox-group {
+            margin: 10px 0;
+        }
+        .slider {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Activity</h1>
+    <h2>Welcome to Cafe Delights</h2>
+    <p>Your cozy corner for the best coffee and treats in town.</p>
+    <h3>Contact Us</h3>
+    <p>We'd love to hear from you! Please fill out the form below:</p>
+
+    <form class="form-section">
+        <h4>Personal Information</h4>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <h4>Visit Information</h4>
+        <label for="visit-date">Preferred Visit Date:</label><br>
+        <input type="date" id="visit-date" name="visit-date" required><br>
+
+        <label for="visit-time">Preferred Time:</label><br>
+        <input type="time" id="visit-time" name="visit-time" required><br>
+
+        <div class="radio-group">
+            <p>Are you a returning customer?</p>
+            <input type="radio" id="yes" name="returning" value="yes" required>
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="returning" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <!-- New Section for Order Preferences -->
+        <h4>Order Preferences</h4>
+        <label for="drink">Favorite Drink:</label><br>
+        <select id="drink" name="drink">
+            <option value="latte">Latte</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="espresso">Espresso</option>
+            <option value="tea">Tea</option>
+        </select><br>
+
+        <div class="checkbox-group">
+            <p>Select your dietary preferences:</p>
+            <input type="checkbox" id="vegan" name="diet" value="vegan">
+            <label for="vegan">Vegan</label><br>
+            <input type="checkbox" id="vegetarian" name="diet" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>
+            <input type="checkbox" id="gluten-free" name="diet" value="gluten-free">
+            <label for="gluten-free">Gluten-Free</label>
+        </div>
+
+        <!-- New Section for Feedback -->
+        <h4>Feedback</h4>
+        <label for="rating">Rate Your Last Visit (1-5):</label><br>
+        <input type="range" id="rating" name="rating" min="1" max="5" class="slider" value="3"><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Tell us about your experience..." rows="4"></textarea><br>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Would you like to receive our newsletter?</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+
