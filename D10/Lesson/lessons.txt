@@ -1,0 +1,14 @@
+Nov 18 
+Javascript Object-oriented Programming (JS OOP) * Async
+
+Mov 19 and 20 (Tuesday and Wednesday)
+MongoDB Atlas and NoSQL Data Modeling
+
+MySQL
+
+Nov 21
+Advance Querying and Query Projections
+
+Nov 22 and 25
+Introduction to RESTful APIs and Web Development
+ 
